@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+table{
+    border-spacing: 0;
+}
+
+td{
+    padding: 0;
+}
+img{
+    border: 0;
+}
+/* Classe wrapper, criada para "juntar" tudo */
+.wrapper{
+    width: 100%;
+    /* Reinforcando a center tag */
+    table-layout: fixed;
+    background-color: #f1f1f1;
+}
+/* .fora{
+    background-color: orange;
+    margin: 0 auto;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 600px;
+} */
+.test{
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+}
+.main{
+    line-height: 0;
+    word-spacing: -5px;
+}

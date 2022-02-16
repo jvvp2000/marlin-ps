@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: white;
+    font-family: sans-serif;
+}
+table{
+    border-spacing: 0;
+}
+td{
+    padding: 0;
+}
+img{
+    border: 0;
+}
+/* Classe wrapper, criada para "juntar" tudo */
+.wrapper{
+    width: 100%;
+    /* Reinforcando a center tag */
+    table-layout: fixed;
+    background-color: #f1f1f1;
+    padding-bottom: 60px;
+}
+
+.webkit{
+    /* Achei 600px ideal para email, 
+    por isso algumas coisas nao estao tao iguais */
+    max-width: 600px;
+    background-color:#003770;
+}
+.fora{
+    margin: 0 auto;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 600px;
+}
+.logo td{
+    position: relative;
+    background-color: #003770;
+    padding: 10px;
+    
+}
+.info{
+    background-color: #ec6608;
+}
+.info td{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em 0 2em;
+}
+.info p{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+.backgroundImage{
+    width: 100%;
+}
+.margin{
+    margin: 2em 2em 3em 2em;
+    box-shadow: rgba(100, 100, 111, 0.377) 8px 10px 15px 0px;
+}
+.padding{
+    padding: 0.5em 1.5em 0.5em 1.5em ;
+    /* box-shadow:; */
+    background-color: white;
+}
+.contratacao{
+    background-image: url(/assets/background_body.png);
+    background-repeat: no-repeat;
+    background-position: 100% 130%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}.content p{
+    line-height: 1.5em;
+    color:  #726a79;
+}
+.btn-concl{
+    padding: 4em 0 2em 0;
+    text-align: center;
+}
+.btn-concl a{
+    font-weight: bold;
+    background-color: #ec6608;
+    padding: 1em 1.9em 1em 2em;
+    text-decoration: none;
+    color: white;
+}
+.btn-falar{
+    display: flex;
+    justify-content: center;
+    padding: 0em 0 2em 0;
+    text-align: center;
+}
+.btn-falar a{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 14em;
+    background-color: #37bb84;
+    padding: 1em 0 1em 0;
+    text-decoration: none;
+    color: white;
+}
+.btn-falar img{
+    width: 1.5em;
+}
+.acesse td{
+    text-align: center;
+    background-color: #003770;
+}
+.acesse p{
+    color: white;
+}
+.acesse a{
+    text-decoration: none;
+    color: white;
+}

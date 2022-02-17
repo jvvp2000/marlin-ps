@@ -81,8 +81,11 @@ header a:hover{
 .orange_text{
     color: #ffc900;
 }
-.bold_text{
+.bold-text{
     font-weight: bold;
+}
+.blue-text{
+    color: #1bb8e9;
 }
 #lei-btn{
     text-decoration: underline;
@@ -230,4 +233,137 @@ header a:hover{
     padding: 0.5em;
     background-color: black;
     color: white;
+}
+.fale-wrapper{
+    padding: 2em 0 2em 10em;
+    display: flex;
+    flex-direction: column;
+}
+.fale-wrapper p,h1{
+    text-align: center;
+    color: white;
+    padding: 1em 0 0.5em 0;
+}
+.fale-form p{
+    font-size: 1em;
+    text-align: start;
+    padding-top: 2em;
+}
+input[type=text], #mensagem{
+    width: 600px;
+    padding: 1em;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#mensagem{
+    height: 150px;
+    resize: none;
+}
+.submit{
+    text-align: end;
+    margin-top: 1em;
+}
+input[type=submit] {
+   border-radius: 4px;
+    background-color: #00d058;
+    border: none;
+    color: white;
+    padding: 1em 3em 1em 3em;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.fale-title hr{
+    background-color: #ffc900;
+    width: 20%;
+}
+.subcontainer-fale{
+    background-image: url(/assets/background_fale.png);
+    background-size: cover;
+    display: flex;
+}
+.contatos{ 
+    margin-top: 3em;
+    margin-bottom: 6em;
+    background-color: white;
+    border-radius: 4px;
+}
+.contatos h1, p{
+    padding-top: 0.3em;
+    font-size: 1.7em;
+    color: rgb(83, 81, 81);
+}
+.contatos hr{
+    background-color: rgb(185, 179, 179);
+    height: 1px;
+    border: none;
+}
+.contatos-wrapper{
+    padding: 1.5em;
+}
+.telefone-fixo{
+    margin: 1.5em 0 1em 0 ;
+    display: flex;
+    gap: 2em;
+}
+.telefone-fixo p{
+    color: rgb(134, 134, 134);    padding: 0;
+    font-size: 1.2em;
+}
+.telefone p{
+    text-align: start;
+}
+#tel{
+    color: #1bb8e9;
+}
+.whatsapp a{
+    margin: 2em 0 2em 0;
+    display: flex;
+    /* align-items: center; */
+    border-radius: 4px;
+    gap: 5em;
+    padding: 0;
+    background-color: #00d28c;
+}
+.whatsapp img{
+    border-radius: 4px;
+    padding: 0.8em;
+    background-color: #04a871;
+}
+.whatsapp p{
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+}
+.nosso-endereco{  
+    margin: 1.5em 0 1em 0 ;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.nosso-endereco p{
+    color: rgb(134, 134, 134);    padding: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.endereco p{
+    /* line-height: 1.1em; */
+    text-align: start;
+}
+.nosso-endereco img{
+    height: 100%;
+}
+#lugar{
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #1bb8e9;
+}
+.container-contatos{
+    padding: 2em 0 0 0;
+    width: 100%;
+    margin-bottom: 0;
 }

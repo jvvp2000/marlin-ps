@@ -78,6 +78,9 @@ header a:hover{
     transition: 0.5s;
     background-color: rgb(228, 167, 54);
 }
+.normal-size{
+    font-weight:lighter;
+}
 .orange_text{
     color: #ffc900;
 }
@@ -98,6 +101,9 @@ header a:hover{
 .sobre_nos_all h1, p{
     padding: 1em 0 4em 0;
     color: white;
+}
+.sobre_nos_all p{
+    font-size: 1em;
 }
 .sobre_nos{
     padding: 1em; 
@@ -125,7 +131,7 @@ header a:hover{
 }
 .lista_sobre div{
     background-color: white;
-    padding: 2em 2em 1em 2em;
+    padding: 2em 2em 0 2em;
     border-radius: 5%;
 }
 .lista_sobre p{

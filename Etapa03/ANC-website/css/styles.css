@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    margin: 0;
+    
+    font-size: 1rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+header{
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10em;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    margin: 1em;
+    font-weight: bold;
+}
+header a{
+    color: rgb(116, 110, 110);
+    font-size: 0.8em;
+}
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 3em; */
+    padding-bottom: 4em;
+    /* background-color: black; */
+    background-image: url(/assets/background01.png);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: 0 -10em;
+    background-size: cover;
+    background-color: black;
+}
+.beneficios h1,h3,a{
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+.beneficios a{
+    margin-top: 2em;
+    padding: 1em 2em 1em 2em;
+    background-color: #ffc900;
+}
+.beneficios a:hover{
+    transition: 0.5s;
+    background-color: rgb(228, 167, 54);
+}
+.orange_text{
+    color: #ffc900;
+}
+.bold_text{
+    font-weight: bold;
+}
+#lei-btn{
+    text-decoration: underline;
+    padding: 0;
+}
+.sobre_nos_all{
+    background-color: #1bb8e9;
+    text-align: center;
+}
+.sobre_nos_all h1, p{
+    padding: 1em 0 4em 0;
+    color: white;
+}
+.sobre_nos{
+    padding: 1em; 
+}
+.sobre_nos h1{
+    padding-bottom: 0.5em;
+}
+.sobre_nos p{
+    padding: 2em 0 1em 0;
+}
+.line{
+    background-color: white;
+    height: 0.45em;
+    width: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    border-radius: 1em;
+}
+.lista_sobre{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    gap: 3em;
+}
+.lista_sobre div{
+    background-color: white;
+    padding: 2em 2em 1em 2em;
+    border-radius: 5%;
+}
+.lista_sobre p{
+    text-align: justify;
+    color: rgb(116, 110, 110);
+}
+#slider{
+    background-color: #f5f5f5;
+    height: 20em;
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #f5f5f5;
+    width: 1600px;
+    margin: auto;
+}
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+.slide-img{
+    background-color: white;
+    padding: 7em;
+    width: 15em;
+    height: 5em;
+    border-radius: 10px;
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.582) inset;
+}
+.img-1{
+    background-image: url(/assets/Affix.png);
+}
+.img-2{
+    background-image: url(/assets/logo-allcare-beneficios.png);
+}
+.img-3{
+    background-image: url(/assets/logo-qualicorp-2048.png);
+}
+.img-4{
+    background-image: url(/assets/logotipo_qvsaude.png);
+}
+.img-5{
+    background-image: url(/assets/logo-clube-care-pq.png);
+}
+@media(max-width:1600px){
+    .container{
+        width: 100%;
+    }
+}
+.produtos{
+    background-color: black;
+}

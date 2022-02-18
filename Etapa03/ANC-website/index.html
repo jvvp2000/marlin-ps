@@ -12,15 +12,24 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <a href=""><img src="/assets/logo.png" alt=""></a>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">SOBRE NOS</a></li>
-            <li><a href="">PARCEIROS</a></li>
-            <li><a href="">OPERADORAS</a></li>
-            <li><a href="">CONTATO</a></li>
-        </ul>
+        <nav class="menu">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">SOBRE NOS</a></li>
+                <li><a href="">PARCEIROS</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Unimedica</a></li>
+                            <li><a href="">Elegibilidade Brasil</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">OPERADORAS</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="beneficios">
         <h1> <span class="normal-size">CONHECA AGORA MESMO</span> <br>OS BENEFICIOS DA ANC</h1>
@@ -33,7 +42,7 @@
         <div class="sobre_nos">
             <h1>SOBRE NOS</h1>
             <hr class="line">
-            <p>A <span class="bold_text">ANC</span> representa os <span class="bold_text">profissionais
+            <p id="info-anc">A <span class="bold_text">ANC</span> representa os <span class="bold_text">profissionais
                     comerciarios</span>
                 que atuam no mercado de trabalho, e que estao de acordo e
                 <br>regulamentados pela <span class="bold_text">Lei Federal N 12.790</span>, de 14 de marco de 2013.
@@ -57,7 +66,8 @@
                 <p>Definido o "Dia<br>do Comerciario",<br>comemorado no dia 30<br>de outubro.</p>
             </div>
         </div>
-        <p class="bold_text">Voce pode ler a lei completa <a class="orange_text" id="lei-btn" href="#">clicando aqui</a>
+        <p class="bold_text" id="lei-completa">Voce pode ler a lei completa <a class="orange_text" id="lei-btn"
+                href="#">clicando aqui</a>
         </p>
     </div>
     <section id="slider">
@@ -137,7 +147,7 @@
     </section>
     <section class="fale-conosco">
         <div class="container-contatos">
-            <div class="subcontainer-fale">
+            <div class="subcontainer-contatos">
                 <div class="fale-wrapper">
                     <div class="fale-title">
                         <h1>FALE CONOSCO</h1>
@@ -178,7 +188,7 @@
                             </div>
                             <hr>
                             <div class="whatsapp">
-                                <a href="">
+                                <a href="https://api.whatsapp.com/send?phone=5521999999999">
                                     <img src="/assets/whatsapp-brands.png" alt="Whatsapp">
                                     <p>WHATSAPP: (21) 99999-9999</p>
                                 </a>
@@ -197,10 +207,16 @@
                     </div>
                 </div>
                 <!-- Div imaginaria criada para poder centralizar a div da esquerda -->
-                <div></div>
+                <div class="div-imaginaria"></div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container-footer">
+            <p>2020 - Desenvolvido por</p>
+            <a href="www.marlin.com.br/"><img src="/assets/Marlin_Logo_Branca_Vetor_RGB.png" alt=""></a>
+        </div>
+    </footer>
     <script src="/js/script.js"></script>
 </body>
 

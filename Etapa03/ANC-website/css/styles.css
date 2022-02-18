@@ -25,28 +25,58 @@ img{
     height: auto;
 }
 header{
-    /* position: fixed; */
+    position: relative;
     padding: 2em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 10em;
+    flex-wrap: wrap;
 }
-header ul{
+@media(max-width:1300px){
+    header{
+        gap:0;
+    }
+}
+.menu a:hover{
+    color: #1bb8e9;;
+}
+.menu ul{
+    padding: 0;
     display: flex;
     justify-content: space-between;
+    gap: 3em;
 }
-header li{
-    margin: 1em;
+@media(max-width:848px){
+    .menu ul{
+        gap:0.5em;
+    }
+    /* header{
+        padding: 0;
+    } */
+}
+.submenu ul{
+    display: initial;
+}
+.submenu ul li a{
+    color: rgb(179, 175, 175);
+    font-size: 0.8em;
+}
+.submenu ul{
+    display: none;
+}
+.menu ul li:hover > .submenu ul{
+    position: absolute;
+    display: block;
+}
+.menu li{
+    /* margin: 1em; */
     font-weight: bold;
 }
-header a{
+.menu a{
     padding: 0;
     color: rgb(116, 110, 110);
     font-size: 0.8em;
-}
-header a:hover{
-    color: #1bb8e9;
 }
 .beneficios{
     display: flex;
@@ -57,11 +87,14 @@ header a:hover{
     padding-bottom: 4em;
     /* background-color: black; */
     background-image: url(/assets/background01.png);
-    /* background-position: center center; */
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-position: 0 -10em;
     background-size: cover;
+    background-position: center;
+    /* Tentando deixar o background responsivel */
+    /* background-size: contain;
+    background-attachment: fixed;
+    background-position: center center; */
+
     background-color: black;
 }
 .beneficios h1,h3,a{
@@ -89,6 +122,12 @@ header a:hover{
 }
 .blue-text{
     color: #1bb8e9;
+}
+#lei-completa{
+    color: white;
+}
+#info-anc{
+    color: white;
 }
 #lei-btn{
     text-decoration: underline;
@@ -126,17 +165,25 @@ header a:hover{
 .lista_sobre{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-bottom: 1em;
     gap: 3em;
 }
+/* @media(max-width:1107){
+    .lista_sobre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
 .lista_sobre div{
     background-color: white;
     padding: 2em 2em 0 2em;
     border-radius: 5%;
 }
 .lista_sobre p{
+    font-weight: 500;
     text-align: justify;
-    color: rgb(116, 110, 110);
+    color: rgb(85, 83, 83);
 }
 #slider{
     background-color: #f5f5f5;
@@ -226,6 +273,7 @@ header a:hover{
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0em 10em 0 10em;
 }
 .operadoras-wrapper img{
@@ -239,6 +287,15 @@ header a:hover{
     padding: 0.5em;
     background-color: black;
     color: white;
+}
+.operadoras-wrapper div{
+    padding: 1em;
+}
+.subcontainer-contatos{
+    background-image: url(/assets/background_fale.png);
+    background-size: cover;
+    display: flex;
+    /* gap: 200px; */
 }
 .fale-wrapper{
     padding: 2em 0 2em 10em;
@@ -268,11 +325,19 @@ input[type=text], #mensagem{
     height: 150px;
     resize: none;
 }
+@media(max-width:777px){
+    .fale-wrapper{
+        padding: 2em 0 2em 4em;
+    }
+    input[type=text], #mensagem{
+        width: 400px;
+    }
+}
 .submit{
     text-align: end;
     margin-top: 1em;
 }
-input[type=submit] {
+input[type=submit]{
    border-radius: 4px;
     background-color: #00d058;
     border: none;
@@ -282,18 +347,16 @@ input[type=submit] {
     margin: 4px 2px;
     cursor: pointer;
 }
+input[type=submit]:hover{
+    background-color: #20b85f;
+}
 .fale-title hr{
     background-color: #ffc900;
     width: 20%;
 }
-.subcontainer-fale{
-    background-image: url(/assets/background_fale.png);
-    background-size: cover;
-    display: flex;
-}
 .contatos{ 
-    margin-top: 3em;
-    margin-bottom: 6em;
+    padding: 0;
+    margin: 3em 0 4em 0;
     background-color: white;
     border-radius: 4px;
 }
@@ -328,7 +391,7 @@ input[type=submit] {
 .whatsapp a{
     margin: 2em 0 2em 0;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     border-radius: 4px;
     gap: 5em;
     padding: 0;
@@ -340,6 +403,8 @@ input[type=submit] {
     background-color: #04a871;
 }
 .whatsapp p{
+    margin: 0;
+    padding: 0;
     font-weight: bold;
     font-size: 1.3em;
     text-align: center;
@@ -372,4 +437,22 @@ input[type=submit] {
     padding: 2em 0 0 0;
     width: 100%;
     margin-bottom: 0;
+}
+footer{
+    padding: 0;
+    background-color: #004457;
+    text-align: center;
+}
+.container-footer{
+    display: flex;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.container-footer p,a{
+    margin: 0;
+    color: white;
+    padding: 0;
+    font-size: 0.8em;
 }

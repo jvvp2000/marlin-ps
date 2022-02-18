@@ -2,22 +2,31 @@
 <html lang="en">
 
 <head>
+    <!-- COMPATIBILITY -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK FOR A SLIDER FRAMEWORK USING JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <!-- LINK FOR CSS -->
     <link rel="stylesheet" href="/css/styles.css">
     <title>ANC website</title>
+
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
         <a href=""><img src="/assets/logo.png" alt=""></a>
+        <!-- NAV BAR -->
         <nav class="menu">
             <ul>
                 <li><a href="">HOME</a></li>
-                <li><a href="">SOBRE NOS</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
                 <li><a href="">PARCEIROS</a>
                     <div class="submenu">
                         <ul>
@@ -31,21 +40,23 @@
             </ul>
         </nav>
     </header>
+    <!-- BENEFICIOS - container01 -->
     <div class="beneficios">
-        <h1> <span class="normal-size">CONHECA AGORA MESMO</span> <br>OS BENEFICIOS DA ANC</h1>
-        <h3>Saiba com detalhes o nosso papel no <span class="orange_text">desenvolvimento das atividades<br>
-                comerciais na cidade.</span> Clique abaixo para conhecer <span class="orange_text">alguns de nossos
+        <h1> <span class="normal-size">CONHEÇA AGORA MESMO</span> <br>OS BENEFÍCIOS DA ANC</h1>
+        <h3>Saiba com detalhes o nosso papel no <span class="orange_text bold-text">desenvolvimento das atividades<br>
+                comerciais na cidade.</span> Clique abaixo para conhecer <span class="orange_text bold-text">alguns de
+                nossos
                 parceiros</span></h3>
         <a href="#" class="parceiros-btn">VEJA NOSSOS PARCEIROS</a>
     </div>
-    <div class="sobre_nos_all">
-        <div class="sobre_nos">
+    <div class="container-sobre">
+        <div class="sobre-nos">
             <h1>SOBRE NOS</h1>
             <hr class="line">
-            <p id="info-anc">A <span class="bold_text">ANC</span> representa os <span class="bold_text">profissionais
+            <p id="info-anc">A <span class="bold-text">ANC</span> representa os <span class="bold-text">profissionais
                     comerciarios</span>
                 que atuam no mercado de trabalho, e que estao de acordo e
-                <br>regulamentados pela <span class="bold_text">Lei Federal N 12.790</span>, de 14 de marco de 2013.
+                <br>regulamentados pela <span class="bold-text">Lei Federal N 12.790</span>, de 14 de marco de 2013.
             </p>
         </div>
         <div class="lista_sobre">
@@ -72,7 +83,7 @@
     </div>
     <section id="slider">
         <div class="container slide_back">
-            <div class="subcontainer">
+            <div class="slider-subcontainer">
                 <div class="slider-wrapper">
                     <div class="slide_top">
                         <h1>BENEFICIOS EM SAUDE</h1>
@@ -154,25 +165,28 @@
                         <hr class="line">
                         <p>Envie-nos uma mensagem agora mesmo!</p>
                     </div>
+
                     <div class="fale-form">
-                        <div class="nome">
+
+                        <form id="form">
+
                             <p>Nome completo:</p>
-                            <input type="text" id="nome" name="nome_todo" placeholder="Digite seu nome">
-                        </div>
-                        <div class="email">
+                            <input type="text" id="nome" name="nome_todo" placeholder="Digite seu nome" required>
+
                             <p>Email de contato:</p>
-                            <input type="text" id="email" name="email_contato" placeholder="seu@email.com.br">
-                        </div>
-                        <div class="mensagem">
-                            <p>Escreva aqui a sua mensagem:</p>
-                            <form>
-                                <textarea name="mensagem_usuario" id="mensagem" cols="47" rows="15"></textarea>
-                            </form>
-                        </div>
-                        <div class="submit">
-                            <input type="submit" value="ENVIAR">
-                        </div>
+                            <input type="email" id="email" name="email_contato" placeholder="seu@email.com.br" required>
+
+                            <div class="mensagem">
+                                <p>Escreva aqui a sua mensagem:</p>
+                                <textarea name="mensagem_usuario" id="mensagem" cols="47" rows="15" required></textarea>
+                            </div>
+
+                            <input id="submit" type="submit" value="ENVIAR">
+
+                        </form>
+
                     </div>
+
                     <div class="contatos">
                         <div class="contatos-wrapper">
                             <div class="contatos-title">

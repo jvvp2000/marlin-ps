@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
 
+/* GENERIC CLEAN/RESET */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -24,93 +25,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-header{
-    position: relative;
-    padding: 2em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10em;
-    flex-wrap: wrap;
-}
-@media(max-width:1300px){
-    header{
-        gap:0;
-    }
-}
-.menu a:hover{
-    color: #1bb8e9;;
-}
-.menu ul{
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 3em;
-}
-@media(max-width:848px){
-    .menu ul{
-        gap:0.5em;
-    }
-    /* header{
-        padding: 0;
-    } */
-}
-.submenu ul{
-    display: initial;
-}
-.submenu ul li a{
-    color: rgb(179, 175, 175);
-    font-size: 0.8em;
-}
-.submenu ul{
-    display: none;
-}
-.menu ul li:hover > .submenu ul{
-    position: absolute;
-    display: block;
-}
-.menu li{
-    /* margin: 1em; */
-    font-weight: bold;
-}
-.menu a{
-    padding: 0;
-    color: rgb(116, 110, 110);
-    font-size: 0.8em;
-}
-.beneficios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 3em; */
-    padding-bottom: 4em;
-    /* background-color: black; */
-    background-image: url(/assets/background01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* Tentando deixar o background responsivel */
-    /* background-size: contain;
-    background-attachment: fixed;
-    background-position: center center; */
-
-    background-color: black;
-}
-.beneficios h1,h3,a{
-    padding: 1em;
-    text-align: center;
-    color: white;
-}
-.beneficios a{
-    margin-top: 2em;
-    padding: 1em 2em 1em 2em;
-    background-color: #ffc900;
-}
-.beneficios a:hover{
-    transition: 0.5s;
-    background-color: rgb(228, 167, 54);
-}
+/* I COULDNT USE TWO CLASSES AT THE SAME TIME SOMETIMES, I DONT KNOW WHY */
 .normal-size{
     font-weight:lighter;
 }
@@ -123,50 +38,149 @@ header{
 .blue-text{
     color: #1bb8e9;
 }
-#lei-completa{
-    color: white;
-}
-#info-anc{
-    color: white;
-}
-#lei-btn{
-    text-decoration: underline;
-    padding: 0;
-}
-.sobre_nos_all{
-    background-color: #1bb8e9;
-    text-align: center;
-}
-.sobre_nos_all h1, p{
-    padding: 1em 0 4em 0;
-    color: white;
-}
-.sobre_nos_all p{
-    font-size: 1em;
-}
-.sobre_nos{
-    padding: 1em; 
-}
-.sobre_nos h1{
-    padding-bottom: 0.3em;
-}
-.sobre_nos p{
-    padding: 2em 0 1em 0;
-}
 .line{
     background-color: white;
     height: 0.45em;
-    width: 7%;
+    width: 140px;
     margin-left: auto;
     margin-right: auto;
     border-style: none;
     border-radius: 1em;
 }
+.container{
+    padding: 2em 0 5em 0;
+    width: 100%;
+    margin: auto;
+}
+
+/* ------------------HEADER------------------ */
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 10em;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 3em;
+}
+/* ADDING EVENT TO SHOW SUBMENU */
+.menu ul li:hover > .submenu ul{
+    position: absolute;
+    display: block;
+}
+.menu li{
+    font-weight: bold;
+    /* margin: 1em; */
+}
+.menu a{
+    color: rgb(116, 110, 110);
+    padding: 0;
+    font-size: 0.8em;
+}
+.menu a:hover{
+    color: #1bb8e9;;
+}
+.submenu ul{
+    display: initial;
+}
+.submenu ul li a{
+    color: rgb(179, 175, 175);
+    font-size: 0.8em;
+}
+.submenu ul{
+    display: none;
+}
+/* RESPOSIVINESS FOR HEADER */
+@media(max-width:1300px){
+    header{
+        gap:0;
+    }
+}
+@media(max-width:848px){
+    .menu ul{
+        gap:0.5em;
+    }
+    /* header{
+        padding: 0;
+    } */
+}
+
+/* ------------------BENEFITS------------------ */
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 3em; */
+    /* background-color: black; */
+    background-image: url(/assets/background01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 4em;
+    /* TRYING TO DO A BETTER RESPONSIVE BACKGROUND */
+    /* background-size: contain;
+    background-attachment: fixed;
+    background-position: center center; */
+}
+.beneficios h1,h3,a{
+    text-align: center;
+    /* padding: 1em; */
+    color: white;
+}
+.beneficios h1{
+    font-size: 3em;
+}
+.beneficios h3{
+    line-height: 1.5em;
+    font-weight: 400;
+}
+/* BUTTON */
+.beneficios a{
+    background-color: #ffc900;
+    padding: 1em 2em 1em 2em;
+    margin-top: 2em;
+    border-radius: 4px;
+}
+.beneficios a:hover{
+    background-color: rgb(228, 167, 54);
+    transition: 0.5s;
+}
+
+/* ------------------ABOUT------------------ */
+.container-sobre{
+    background-color: #1bb8e9;
+    text-align: center;
+}
+.container-sobre h1, p{
+    padding: 1em 0 4em 0;
+    color: white;
+}
+.container-sobre p{
+    font-size: 1em;
+}
+.sobre-nos{
+    padding: 1em; 
+}
+.sobre-nos h1{
+    font-size: 3em;
+    padding-bottom: 0.2em;
+}
+.sobre-nos p{
+    padding: 2.4em 0 1em 0;
+}
+
 .lista_sobre{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 1em;
+    padding-bottom: 1.8em;
     gap: 3em;
 }
 /* @media(max-width:1107){
@@ -181,10 +195,27 @@ header{
     border-radius: 5%;
 }
 .lista_sobre p{
+    padding-bottom: 32px;
     font-weight: 500;
     text-align: justify;
     color: rgb(85, 83, 83);
 }
+/* IN THIS CASES, I COULDNT USE TWO CLASSES */
+#info-anc{
+    color: white;
+}
+#lei-completa{
+    font-weight: bold;
+    color: white;
+}
+#lei-btn{
+    font-size: 1em;
+    text-decoration: underline;
+    padding: 0;
+}
+
+/* ------------------HEALTH BENEFITS------------------ */
+/* SLIDER FEITO COM JS */
 #slider{
     background-color: #f5f5f5;
     height: 20em;
@@ -193,36 +224,32 @@ header{
     justify-content: center;
     align-items: center;
 }
-.container{
-    padding: 2em 0 5em 0;
-    width: 100%;
-    margin: auto;
-}
 .slide_back{
     background-color: #f5f5f5;
 }
-.subcontainer{
+.slider-subcontainer{
     width: 85%;
     margin: auto;
 }
 .slide-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
+    cursor: pointer;
     padding: 7em;
     width: 15em;
     height: 5em;
     border-radius: 10px;
-    background-position: center;
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 0.5s;
+    /* background-size: cover; */
 }
 .slide-img:hover{
     box-shadow: 0 0 0 200px rgba(110, 107, 107, 0.123) inset;
 }
+/* IMAGENS USADAS NO CAROUSEL/SLIDER */
 .img-1{
     background-image: url(/assets/Affix.png);
 }
@@ -238,13 +265,9 @@ header{
 .img-5{
     background-image: url(/assets/logo-clube-care-pq.png);
 }
-/* @media(max-width:1600px){
-    .container{
-        width: 100%;
-    }
-} */
 .slide_top h1{
-    padding: 1em 0 0.5em 0;
+    font-size: 3em;
+    padding: 1em 0 0.2em 0;
     text-align: center;
     color: #1bb8e9;
 }
@@ -252,6 +275,8 @@ header{
     margin-bottom: 2em;
     background-color: #ffc900;
 }
+
+/* ------------------PRODUCTS------------------ */
 .produtos{
     /* width: auto; */
     margin-top: 10em;
@@ -260,7 +285,8 @@ header{
     padding-bottom: 8em;
 }
 .produtos_title h1{
-    padding: 1em 0 0.5em 0;
+    font-size: 3em;
+    padding: 2em 0 0.2em 0;
     text-align: center;
     color: #1bb8e9;
 }
@@ -291,6 +317,8 @@ header{
 .operadoras-wrapper div{
     padding: 1em;
 }
+
+/* ------------------CONTACTS------------------ */
 .subcontainer-contatos{
     background-image: url(/assets/background_fale.png);
     background-size: cover;
@@ -298,22 +326,29 @@ header{
     /* gap: 200px; */
 }
 .fale-wrapper{
-    padding: 2em 0 2em 10em;
+    padding: 2em 0 20em 10em;
     display: flex;
     flex-direction: column;
 }
 .fale-wrapper p,h1{
     text-align: center;
     color: white;
-    padding: 1em 0 0.5em 0;
+    padding: 1em 0 0.2em 0;
+}
+.fale-title h1{
+    font-size: 3em;
+}
+.fale-title p{
+    margin-top: 1em;
+    font-size: 1em;
 }
 .fale-form p{
     font-size: 1em;
     text-align: start;
     padding-top: 2em;
 }
-input[type=text], #mensagem{
-    width: 600px;
+input[type=text], input[type=email], textarea{
+    width: 500px;
     padding: 1em;
     margin: 0;
     display: inline-block;
@@ -321,7 +356,7 @@ input[type=text], #mensagem{
     border-radius: 4px;
     box-sizing: border-box;
 }
-#mensagem{
+textarea{
     height: 150px;
     resize: none;
 }
@@ -329,13 +364,26 @@ input[type=text], #mensagem{
     .fale-wrapper{
         padding: 2em 0 2em 4em;
     }
-    input[type=text], #mensagem{
+    input[type=text], input[type=email], #mensagem{
         width: 400px;
     }
+    .contatos{
+        background-color: black;
+        /* margin-top: 8em; */
+        width: 400px;
+    }
+    #submit{
+        /* position: absolute; */
+        margin-left: 200px;
+        /* right: 1em; */
+    }
 }
-.submit{
-    text-align: end;
-    margin-top: 1em;
+@media(max-width:780px){  
+}
+
+#submit{
+    position: absolute;
+    margin: 1em 0 0 374px;
 }
 input[type=submit]{
    border-radius: 4px;
@@ -350,13 +398,12 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: #20b85f;
 }
-.fale-title hr{
-    background-color: #ffc900;
-    width: 20%;
-}
+
+/* ------------------CONTACTS------------------ */
 .contatos{ 
+    width: 500px;
     padding: 0;
-    margin: 3em 0 4em 0;
+    margin: 8em 0 4em 0;
     background-color: white;
     border-radius: 4px;
 }
@@ -365,10 +412,8 @@ input[type=submit]:hover{
     font-size: 1.7em;
     color: rgb(83, 81, 81);
 }
-.contatos hr{
-    background-color: rgb(185, 179, 179);
-    height: 1px;
-    border: none;
+.fale-title hr{
+    background-color: #ffc900;  
 }
 .contatos-wrapper{
     padding: 1.5em;
@@ -406,7 +451,7 @@ input[type=submit]:hover{
     margin: 0;
     padding: 0;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
     color: white;
 }

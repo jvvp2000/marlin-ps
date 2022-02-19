@@ -1,6 +1,6 @@
 // tns e uma ferramenta do tiny slider
 let slider = tns({
-    container: ".slide_all",
+    container: ".slide-all",
     "slideBy": "1",
     "speed": 500,
     "nav": false,

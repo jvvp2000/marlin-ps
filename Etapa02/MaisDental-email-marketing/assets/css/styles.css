@@ -32,6 +32,8 @@ img{
     margin: 0;
     border-spacing: 0;
 }
+/* Um pouco de gambiarra, pois nao sei por que 
+a table esta espacando mesmo com border spacing 0 */
 .main{
     line-height: 0;
     word-spacing: -5px;

@@ -1,3 +1,4 @@
+/* GENERIC */
 body{
     margin:0;
     padding: 0;
@@ -13,6 +14,7 @@ td{
 img{
     border: 0;
 }
+
 /* Classe wrapper, criada para "juntar" tudo */
 .wrapper{
     width: 100%;
@@ -28,12 +30,15 @@ img{
     max-width: 600px;
     background-color:#003770;
 }
+/* Parte de fora, como um container */
 .fora{
     margin: 0 auto;
     border-spacing: 0;
     width: 100%;
     max-width: 600px;
 }
+
+/* HEADER - ou quase isso */
 .logo td{
     position: relative;
     background-color: #003770;
@@ -56,6 +61,7 @@ img{
 .backgroundImage{
     width: 100%;
 }
+/* Comecando a fazer o quadrado branco */
 .margin{
     margin: 2em 2em 3em 2em;
     box-shadow: rgba(100, 100, 111, 0.377) 8px 10px 15px 0px;
@@ -66,16 +72,19 @@ img{
     background-color: white;
 }
 .contratacao{
-    background-image: url(/assets/background_body.png);
+    background-image: url(/assets/img/background_body.png);
     background-repeat: no-repeat;
     background-position: 100% 130%;
     position: relative;
     display: flex;
     justify-content: center;
-}.content p{
+}
+.content p{
     line-height: 1.5em;
     color:  #726a79;
 }
+
+/* BOTOES */
 .btn-concl{
     padding: 4em 0 2em 0;
     text-align: center;
@@ -107,6 +116,8 @@ img{
 .btn-falar img{
     width: 1.5em;
 }
+
+/* FOOTER */
 .acesse td{
     text-align: center;
     background-color: #003770;

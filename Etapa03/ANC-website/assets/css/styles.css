@@ -126,7 +126,7 @@ header{
     align-items: center;
     /* gap: 3em; */
     /* background-color: black; */
-    background-image: url(/assets/background01.png);
+    background-image: url(/assets/img/background_info.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -268,19 +268,19 @@ obs: FIZ SEM AS SETAS PARA NAVEGACAO POR PARECER MAIS CLEAN, MAS TEM A OPCAO*/
 }
 /* IMAGENS USADAS NO CAROUSEL/SLIDER */
 .img-1{
-    background-image: url(/assets/Affix.png);
+    background-image: url(/assets/img/logo_affix.png);
 }
 .img-2{
-    background-image: url(/assets/logo-allcare-beneficios.png);
+    background-image: url(/assets/img/logo_allcare.png);
 }
 .img-3{
-    background-image: url(/assets/logo-qualicorp-2048.png);
+    background-image: url(/assets/img/logo_qualicorp.png);
 }
 .img-4{
-    background-image: url(/assets/logotipo_qvsaude.png);
+    background-image: url(/assets/img/logo_qvsaude.png);
 }
 .img-5{
-    background-image: url(/assets/logo-clube-care-pq.png);
+    background-image: url(/assets/img/logo_clube_care.png);
 }
 
 /* ------------------PRODUCTS------------------ */
@@ -327,7 +327,7 @@ obs: FIZ SEM AS SETAS PARA NAVEGACAO POR PARECER MAIS CLEAN, MAS TEM A OPCAO*/
 
 /* ------------------CONTACTS 1------------------ */
 .subcontainer-contatos{
-    background-image: url(/assets/background_fale.png);
+    background-image: url(/assets/img/background_fale.png);
     background-size: cover;
     display: flex;
     /* gap: 200px; */

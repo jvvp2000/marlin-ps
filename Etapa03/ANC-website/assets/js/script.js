@@ -1,4 +1,4 @@
-// tns e uma ferramenta do tiny slider
+// TNS e uma ferramenta do tiny slider
 let slider = tns({
     container: ".slide-all",
     "slideBy": "1",
